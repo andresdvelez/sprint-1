@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-left">
+        <div class="container-left_balance">
+          <p class="balance-title">My balance</p>
+          <h3 class="balance-value">$921.48</h3>
+        </div>
+        <div class="container-left_img">
+          <img src="assets/logo.svg" alt="logo" />
+        </div>
+      </div>
+      <div class="container-right">
+        <div class="container-right_header">
+          <p class="header-title">Spending - Last 7 days</p>
+        </div>
+        <div class="container-right_graphy">
+          <div>
+            <span id="tag-1"></span>
+            <div
+              onmouseenter="desplegar(1)"
+              onmouseleave="ocultar(1)"
+              class="bars-1"
+            ></div>
+            <p>mon</p>
+          </div>
+          <div>
+            <span id="tag-2">s</span>
+            <div
+              onmouseenter="desplegar(2)"
+              onmouseleave="ocultar(2)"
+              class="bars-2"
+            ></div>
+            <p>tue</p>
+          </div>
+          <div>
+            <span id="tag-3"></span>
+            <div
+              onmouseenter="desplegar(3)"
+              onmouseleave="ocultar(3)"
+              class="bars-3"
+            ></div>
+            <p>wed</p>
+          </div>
+          <div>
+            <span id="tag-4"></span>
+            <div
+              onmouseenter="desplegar(4)"
+              onmouseleave="ocultar(4)"
+              class="bars-4"
+            ></div>
+            <p>thu</p>
+          </div>
+          <div>
+            <span id="tag-5"></span>
+            <div
+              onmouseenter="desplegar(5)"
+              onmouseleave="ocultar(5)"
+              class="bars-5"
+            ></div>
+            <p>fri</p>
+          </div>
+          <div>
+            <span id="tag-6"></span>
+            <div
+              onmouseenter="desplegar(6)"
+              onmouseleave="ocultar(6)"
+              class="bars-6"
+            ></div>
+            <p>sat</p>
+          </div>
+          <div>
+            <span id="tag-7"></span>
+            <div
+              onmouseenter="desplegar(7)"
+              onmouseleave="ocultar(7)"
+              class="bars-7"
+            ></div>
+            <p>sun</p>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="total">
+          <div class="total-left">
+            <h3 class="total-left_title">Total this month</h3>
+            <p id="total" class="total-left_value"></p>
+          </div>
+          <div class="total-right">
+            <p class="total-right_value">+2.4%</p>
+            <h3 class="total-right_title">from last month</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
